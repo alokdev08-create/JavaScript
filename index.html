@@ -49,10 +49,10 @@
       var n = null;
       console.log(n);
       /*
-    primitibeDataTypes= ["String","Number","Boolean","undefined","null","Symbol"];
-    referenceDataTypes= ["Arrays","Objects"];
+      primitibeDataTypes= ["String","Number","Boolean","undefined","null","Symbol"];
+      referenceDataTypes= ["Arrays","Objects"];
 
-    */
+      */
 
       //5.operators in JavaScript
       // 1).Arithmetic Operators (+,-,*,/,%,**)
@@ -64,7 +64,7 @@
       console.log("a * b =", a * b); // Multiplication
       console.log("a / b =", a / b); // Division
       console.log("a % b =", a % b); // Modulus
-      console.log("a ** b =", a ** b); // Exponentiation
+      console.log("a ** b =", a ** b); // Exponentiation(power)
       // 2).Assignment Operators (=,+=,-=,*=,/=,%=)
       var c = 10;
       c += 5; // c = c + 5
@@ -103,7 +103,6 @@
       str1 += "JavaScript "; // Append
       console.log("Appended String:", str1);
 
-
       //6. Functions in JavaScript
       // 1) Example 1: A simple fucntion that will name and greet the user
       greeting = greet("Alok Ranjan");
@@ -119,14 +118,126 @@
       }
 
       //7.Condiational in JavaScript
-        var age = 18;
-        if (age < 18) {
-          console.log("You are a minor.");
-        } else if (age === 18) {
-          console.log("You are just an adult.");
+      //    1)Exmaple 1: Check if a number is positive, negative, or zero
+      var age = 18;
+      if (age < 18) {
+        console.log("You are a minor.");
+      } else if (age === 18) {
+        console.log("You are just an adult.");
+      } else {
+        console.log("You are an adult.");
+      }
+      // 2) Example 2: Check if a number is even or odd
+      var number = 7;
+      var result = isEvenOrOdd(number);
+      console.log(number + " is " + result);
+      function isEvenOrOdd(num) {
+        if (num % 2 === 0) {
+          return "Even";
         } else {
-          console.log("You are an adult.");
+          return "Odd";
         }
+      }
+
+      //8.Switch Statement
+      var day = 3;
+      var dayName;
+      switch (day) {
+        case 1:
+          dayName = "Monday";
+          break;
+        case 2:
+          dayName = "Tuesday";
+          break;
+        case 3:
+          dayName = "Wednesday";
+          break;
+        case 4:
+          dayName = "Thursday";
+          break;
+        case 5:
+          dayName = "Friday";
+          break;
+        case 6:
+          dayName = "Saturday";
+          break;
+        case 7:
+          dayName = "Sunday";
+          break;
+        default:
+          dayName = "Invalid day";
+      }
+      console.log("Day Name:", dayName);
+
+      //9.Loops in JavaScript
+      // 1) Example 1: Print numbers from 1 to 5 using a for loop
+      console.log("Numbers from 1 to 5:");
+      for (var i = 1; i <= 5; i++) {
+        console.log(i);
+      }
+      // 2) Example 2: Print elements of an array using a for loop
+      var fruits = ["Apple", "Banana", "Cherry"];
+      console.log("Fruits:");
+      for (var j = 0; j < fruits.length; j++) {
+        console.log(fruits[j]);
+      }
+      // 3) Example 3: Print numbers from 1 to 5 using a while loop
+      console.log("Numbers from 1 to 5 using while loop:");
+      var k = 1;
+      while (k <= 5) {
+        console.log(k);
+        k++;
+      }
+      // 4) Example 4: Print elements of an array using a while loop
+      console.log("Fruits using while loop:");
+      var m = 0;
+      while (m < fruits.length) {
+        console.log(fruits[m]);
+        m++;
+      }
+      // 5) Example 5: Print numbers from 1 to 5 using a do-while loop
+      console.log("Numbers from 1 to 5 using do-while loop:");
+      var n = 1;
+      do {
+        console.log(n);
+        n++;
+      } while (n <= 5);
+      // 6) Example 6: Print elements of an array using a do-while loop
+      console.log("Fruits using do-while loop:");
+      var p = 0;
+      do {
+        console.log(fruits[p]);
+        p++;
+      } while (p < fruits.length);
+      // ForEach Loop
+      // 1) Example 7: Print elements of an array using forEach loop
+      console.log("Fruits using forEach loop:");
+      fruits.forEach(function (fruit) {
+        console.log(fruit);
+      });
+      var arr1 = [1, 2, 3, 4, 5];
+      arr1.forEach(function (element) {
+        if (element % 2 === 0) {
+          console.log("Even Number");
+        } else {
+          console.log("Odd Number");
+        }
+      });
+
+      //10. Let and Const in JavaScript
+        let myVariable = "Initial Value";
+        console.log("Before reassignment:", myVariable);
+        myVariable = "Reassigned Value";
+        console.log("After reassignment:", myVariable);
+        const myConstant = "Constant Value";
+        console.log("Constant:", myConstant);
+        // myConstant = "New Value"; // This will cause an error
+        // console.log("After reassignment:", myConstant);
+        const myConst="Alok Ranjan"; // This will cause an error
+        console.log("My Name is:", myConst);
+
+        
+
     </script>
   </body>
 </html>
