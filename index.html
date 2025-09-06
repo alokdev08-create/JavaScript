@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First Java Script Learning</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <h1>Welcome to My JavaScript Learning Page</h1>
@@ -66,43 +66,67 @@
       console.log("a % b =", a % b); // Modulus
       console.log("a ** b =", a ** b); // Exponentiation
       // 2).Assignment Operators (=,+=,-=,*=,/=,%=)
-        var c = 10;
-        c += 5; // c = c + 5
-        console.log("c after += 5:", c);
-        c -= 3; // c = c - 3
-        console.log("c after -= 3:", c);
-        c *= 2; // c = c * 2
-        console.log("c after *= 2:", c);
-        c /= 4; // c = c / 4
-        console.log("c after /= 4:", c);
-        c %= 3; // c = c % 3
-        console.log("c after %= 3:", c);
-        // 3).Comparison Operators (==,===,!=,!==,>,<,>=,<=)
-        var x = 10;
-        var y = "10";   
-        console.log("x == y:", x == y); // true (value comparison)
-        console.log("x === y:", x === y); // false (value and type comparison
-        console.log("x != y:", x != y); // false (value comparison)
-        console.log("x !== y:", x !== y); // true (value and type comparison
-        console.log("x > y:", x > y); // false
-        console.log("x < y:", x < y); // false
-        console.log("x >= y:", x >= y); // true
-        console.log("x <= y:", x <= y); // true
-        // 4).Logical Operators (&&,||,!)
-        var p = true;
-        var q = false;
-        console.log("p && q:", p && q); // false (AND)
-        console.log("p || q:", p || q); // true (OR)
-        console.log("!p:", !p); // false (NOT)
-        console.log("!q:", !q); // true (NOT)
-        // 5).String Operators (+,+=)
-        var str1 = "Hello, ";
-        var str2 = "World!";
-        var str3 = str1 + str2; // Concatenation
-        console.log("Concatenated String:", str3);
-        str1 += "JavaScript "; // Append
-        console.log("Appended String:", str1);
-        //6. Functions in JavaScript
+      var c = 10;
+      c += 5; // c = c + 5
+      console.log("c after += 5:", c);
+      c -= 3; // c = c - 3
+      console.log("c after -= 3:", c);
+      c *= 2; // c = c * 2
+      console.log("c after *= 2:", c);
+      c /= 4; // c = c / 4
+      console.log("c after /= 4:", c);
+      c %= 3; // c = c % 3
+      console.log("c after %= 3:", c);
+      // 3).Comparison Operators (==,===,!=,!==,>,<,>=,<=)
+      var x = 10;
+      var y = "10";
+      console.log("x == y:", x == y); // true (value comparison)
+      console.log("x === y:", x === y); // false (value and type comparison
+      console.log("x != y:", x != y); // false (value comparison)
+      console.log("x !== y:", x !== y); // true (value and type comparison
+      console.log("x > y:", x > y); // false
+      console.log("x < y:", x < y); // false
+      console.log("x >= y:", x >= y); // true
+      console.log("x <= y:", x <= y); // true
+      // 4).Logical Operators (&&,||,!)
+      var p = true;
+      var q = false;
+      console.log("p && q:", p && q); // false (AND)
+      console.log("p || q:", p || q); // true (OR)
+      console.log("!p:", !p); // false (NOT)
+      console.log("!q:", !q); // true (NOT)
+      // 5).String Operators (+,+=)
+      var str1 = "Hello, ";
+      var str2 = "World!";
+      var str3 = str1 + str2; // Concatenation
+      console.log("Concatenated String:", str3);
+      str1 += "JavaScript "; // Append
+      console.log("Appended String:", str1);
+
+
+      //6. Functions in JavaScript
+      // 1) Example 1: A simple fucntion that will name and greet the user
+      greeting = greet("Alok Ranjan");
+      console.log(greeting);
+      function greet(name) {
+        return "Hello, " + name + "!";
+      }
+      // 2) Example 2: A function that adds two numbers and returns the result
+      sum = addNumer(5, 10);
+      console.log("Sum from function:", sum);
+      function addNumer(num1, num2) {
+        return num1 + num2;
+      }
+
+      //7.Condiational in JavaScript
+        var age = 18;
+        if (age < 18) {
+          console.log("You are a minor.");
+        } else if (age === 18) {
+          console.log("You are just an adult.");
+        } else {
+          console.log("You are an adult.");
+        }
     </script>
   </body>
 </html>
