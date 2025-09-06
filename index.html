@@ -225,19 +225,96 @@
       });
 
       //10. Let and Const in JavaScript
-        let myVariable = "Initial Value";
-        console.log("Before reassignment:", myVariable);
-        myVariable = "Reassigned Value";
-        console.log("After reassignment:", myVariable);
-        const myConstant = "Constant Value";
-        console.log("Constant:", myConstant);
-        // myConstant = "New Value"; // This will cause an error
-        // console.log("After reassignment:", myConstant);
-        const myConst="Alok Ranjan"; // This will cause an error
-        console.log("My Name is:", myConst);
+      let myVariable = "Initial Value";
+      console.log("Before reassignment:", myVariable);
+      myVariable = "Reassigned Value";
+      console.log("After reassignment:", myVariable);
+      const myConstant = "Constant Value";
+      console.log("Constant:", myConstant);
+      // myConstant = "New Value"; // This will cause an error
+      // console.log("After reassignment:", myConstant);
+      const myConst = "Alok Ranjan"; // This will cause an error
+      console.log("My Name is:", myConst);
 
-        
+      //11. Break and Continue Statement
+      // 1) Example 1: Using break statement in a loop
+      console.log("Using break statement:");
+      for (let i = 1; i <= 10; i++) {
+        if (i === 5) {
+          console.log("Breaking the loop at i =", i);
+          break; // Exit the loop when i is 5
+        }
+        console.log(i);
+      }
+      // 2) Example 2: Using continue statement in a loop
+      console.log("Using continue statement:");
+      for (let j = 1; j <= 10; j++) {
+        if (j % 2 === 0) {
+          console.log("Skipping even number:", j);
+          continue; // Skip the rest of the loop for even numbers
+        }
+        console.log(j); // This will only log odd numbers
+      }
 
+      //12. Arrays methods in JavaScript
+      let myArray = ["Apple", "Banana", "Cherry"];
+      console.log("Original Array:", myArray);
+      // Adding an element to the end of the array
+      myArray.push("Date");
+      console.log("After push:", myArray);
+      // Removing the last element from the array
+      myArray.pop();
+      console.log("After pop:", myArray);
+      // Adding an element to the beginning of the array
+      myArray.unshift("Mango");
+      console.log("After unshift:", myArray);
+      // Removing the first element from the array
+      myArray.shift();
+      console.log("After shift:", myArray);
+      // Finding the index of an element
+      let index = myArray.indexOf("Banana");
+      console.log("Index of Banana:", index);
+      // Slicing the array
+      let newArray = myArray.slice(1, 3);
+      console.log("Sliced Array (1 to 3):", newArray);
+      // Splicing the array (removing 1 element at index 1 and adding "Orange")
+      myArray.splice(1, 1, "Orange");
+      console.log("After splice:", myArray);
+      // Iterating over the array using forEach
+      console.log("Iterating using forEach:");
+      myArray.forEach(function (fruit) {
+        console.log(fruit);
+      });
+      //13.String methods in JavaScript
+      let myString1 = "Hello, JavaScript!";
+      console.log("Original String:", myString1);
+      // Finding the length of the string
+      console.log("Length of String:", myString1.length);
+      // Converting to uppercase
+      console.log("Uppercase:", myString1.toUpperCase());
+      // Converting to lowercase
+      console.log("Lowercase:", myString1.toLowerCase());
+      // Finding a substring
+      console.log("Substring (0 to 5):", myString1.substring(0, 5));
+      // Replacing a substring
+      console.log("After replace:", myString1.replace("JavaScript", "World"));
+      // Splitting the string into an array
+      let stringArray = myString1.split(", ");
+      console.log("Split String into Array:", stringArray);
+      // Trimming whitespace
+      let myString2 = "   Hello, World!   ";
+      console.log("Trimmed String:", myString2.trim());
+      // Checking if the string includes a substring
+      console.log("Includes 'JavaScript':", myString1.includes("JavaScript"));
+      // Accessing characters by index
+      console.log("Character at index 7:", myString1.charAt(7));
+      console.log("Character at index 7 using []:", myString1[7]);
+      // Last index of a substring
+      let myString3 = "Hello, JavaScript! Welcome to JavaScript.";
+      console.log(
+        "Last index of 'JavaScript':",
+        myString3.lastIndexOf("JavaScript")
+      );
     </script>
   </body>
 </html>
