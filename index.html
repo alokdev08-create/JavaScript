@@ -1,36 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First Java Script Learning</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <h1>Welcome to My JavaScript Learning Page</h1>
     <p>This is a simple HTML page to practice JavaScript.</p>
     <button id="myButton">Click Me!</button>
 
     <script>
-        //1. Way to write JavaScript code
-       // console.log("Hello, World!");
-        //2. Java Script console API(Application Programming Interface)
-        // console.warn("This is a warning message.");
-        // console.error("This is an error message.");
-        // console.info("This is an informational message.");
-        // console.debug("This is a debug message.");
-        //alert("Welcome to JavaScript Learning!");
+      //1. Way to write JavaScript code
+      // console.log("Hello, World!");
+      //2. Java Script console API(Application Programming Interface)
+      // console.warn("This is a warning message.");
+      // console.error("This is an error message.");
+      // console.info("This is an informational message.");
+      // console.debug("This is a debug message.");
+      //alert("Welcome to JavaScript Learning!");
 
-        //3. Variables in JavaScript
-        var number1 = 10;
-        var number2 = 20;
-        console.log("Number 1:", number1);
-        console.log("Number 2:", number2);
-        console.log("Sum:", number1 + number2);
+      //3. Variables in JavaScript
+      var number1 = 10;
+      var number2 = 20;
+      console.log("Number 1:", number1);
+      console.log("Number 2:", number2);
+      console.log("Sum:", number1 + number2);
 
-        //4. Data Types in JavaScript
+      //4. Data Types in JavaScript
+      var myString = "Hello, JavaScript!";
+      var myNumber = 42;
+      var myBoolean1 = true;
+      var myBoolean2 = false;
+      var arr = [1, 2, 3, 4, 5];
+      var myObject = { name: "John", age: 30 };
+      console.log("String:", myString);
+      console.log("Number:", myNumber);
+      console.log("Boolean:", myBoolean1);
+      console.log("Boolean:", myBoolean2);
+      console.log("Array:", arr);
+      console.log("Object:", myObject);
 
+      var und = undefined;
+      var und2;
+      console.log(und);
+      console.log(und2);
+      var n = null;
+      console.log(n);
+      /*
+    primitibeDataTypes= ["String","Number","Boolean","undefined","null","Symbol"];
+    referenceDataTypes= ["Arrays","Objects"];
+
+    */
+
+      //5.operators in JavaScript
+      // 1).Arithmetic Operators (+,-,*,/,%,**)
+      var a = 10;
+      var b = 5;
+      console.log("a + b =", a + b); // Addition
+      console.log("a - b =", a - b); // Subtraction
+
+      console.log("a * b =", a * b); // Multiplication
+      console.log("a / b =", a / b); // Division
+      console.log("a % b =", a % b); // Modulus
+      console.log("a ** b =", a ** b); // Exponentiation
+      // 2).Assignment Operators (=,+=,-=,*=,/=,%=)
+        var c = 10;
+        c += 5; // c = c + 5
+        console.log("c after += 5:", c);
+        c -= 3; // c = c - 3
+        console.log("c after -= 3:", c);
+        c *= 2; // c = c * 2
+        console.log("c after *= 2:", c);
+        c /= 4; // c = c / 4
+        console.log("c after /= 4:", c);
+        c %= 3; // c = c % 3
+        console.log("c after %= 3:", c);
+        // 3).Comparison Operators (==,===,!=,!==,>,<,>=,<=)
+        var x = 10;
+        var y = "10";   
+        console.log("x == y:", x == y); // true (value comparison)
+        console.log("x === y:", x === y); // false (value and type comparison
+        console.log("x != y:", x != y); // false (value comparison)
+        console.log("x !== y:", x !== y); // true (value and type comparison
+        console.log("x > y:", x > y); // false
+        console.log("x < y:", x < y); // false
+        console.log("x >= y:", x >= y); // true
+        console.log("x <= y:", x <= y); // true
+        // 4).Logical Operators (&&,||,!)
+        var p = true;
+        var q = false;
+        console.log("p && q:", p && q); // false (AND)
+        console.log("p || q:", p || q); // true (OR)
+        console.log("!p:", !p); // false (NOT)
+        console.log("!q:", !q); // true (NOT)
+        // 5).String Operators (+,+=)
+        var str1 = "Hello, ";
+        var str2 = "World!";
+        var str3 = str1 + str2; // Concatenation
+        console.log("Concatenated String:", str3);
+        str1 += "JavaScript "; // Append
+        console.log("Appended String:", str1);
+        //6. Functions in JavaScript
     </script>
-
-</body>
+  </body>
 </html>
