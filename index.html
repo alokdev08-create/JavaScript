@@ -315,6 +315,134 @@
         "Last index of 'JavaScript':",
         myString3.lastIndexOf("JavaScript")
       );
+
+      //14.Date and Time in JavaScript
+      let myDate = new Date();
+      console.log("Current Date and Time:", myDate);
+      console.log("Year:", myDate.getFullYear());
+      console.log("Month (0-11):", myDate.getMonth());
+
+      console.log("Date:", myDate.getDate());
+      console.log("Day (0-6):", myDate.getDay());
+      console.log("Hours:", myDate.getHours());
+      console.log("Minutes:", myDate.getMinutes());
+      console.log("Seconds:", myDate.getSeconds());
+      console.log("Milliseconds:", myDate.getMilliseconds());
+      console.log(
+        "Time in milliseconds since January 1, 1970:",
+        myDate.getTime()
+      );
+      // Setting date and time
+      myDate.setFullYear(2023);
+      myDate.setMonth(11); // December (0-11)
+      myDate.setDate(25);
+      myDate.setHours(10);
+      myDate.setMinutes(30);
+      myDate.setSeconds(0);
+
+      console.log("Updated Date and Time:", myDate);
+
+      //15.DOM Manipulation in JavaScript
+      document.getElementById("myButton").onclick = function () {
+        alert("Button Clicked! Welcome to JavaScript Learning.");
+      };
+      let myElement = document.getElementById("myButton");
+      console.log("Element with ID 'myButton':", myElement);
+      myElement.style.backgroundColor = "lightblue";
+      myElement.style.fontSize = "16px";
+      myElement.innerText = "Click Me to Learn JavaScript!";
+      console.log("Updated Element:", myElement);
+
+      //16.Event in JavaScript
+      myElement.addEventListener("mouseover", function () {
+        console.log("Mouse over the button!");
+        myElement.style.backgroundColor = "lightgreen";
+      });
+
+      myElement.addEventListener("mouseout", function () {
+        console.log("Mouse out of the button!");
+        myElement.style.backgroundColor = "lightblue";
+      });
+      myElement.addEventListener("click", function () {
+        console.log("Button clicked!");
+        alert("You clicked the button!");
+      });
+      myElement.addEventListener("mouseup", function () {
+        console.log("Mouse button released!");
+        alert("Mouse button released!");
+      });
+
+      // Arrow Function
+      const add = (x, y) => {
+        return x + y;
+      };
+      const sum1 = add(5, 10);
+      console.log("Sum using arrow function:", sum1);
+
+      const greetUser = (name) => "Hello, " + name + "!";
+      const greeting1 = greetUser("Alok Ranjan");
+      console.log(greeting1);
+
+      // 17.Timing Events in JavaScript
+      // 1) Example 1: Using setTimeout to execute a function after a delay
+      cto = setTimeout(function () {
+        console.log("This message is displayed after 3 seconds.");
+        //alert("This message is displayed after 3 seconds.");
+      }, 3000); // 3000 milliseconds = 3 seconds
+      clearTimeout(cto); // To cancel the timeout before it executes
+      // 2) Example 2: Using setInterval to execute a function repeatedly at specified intervals
+      let count = 0;
+      let intervalId = setInterval(function () {
+        count++;
+        console.log("This message is displayed every 2 seconds. Count:", count);
+        if (count === 5) {
+          clearInterval(intervalId); // Stop the interval after 5 executions
+          console.log("Interval cleared after 5 executions.");
+        }
+      }, 2000); // 2000 milliseconds = 2 seconds
+
+      //18 localStorage in JavaScript
+      // Setting an item in localStorage
+      localStorage.setItem("username", "AlokRanjan");
+      // Getting an item from localStorage
+      const username = localStorage.getItem("username");
+      console.log("Username from localStorage:", username);
+      // Removing an item from localStorage
+      localStorage.removeItem("username");
+      console.log("Username removed from localStorage.");
+      // Clearing all items from localStorage
+      localStorage.clear();
+      console.log("All items cleared from localStorage.");
+
+      //19.JSON in JavaScript
+      // Example JSON object
+      const jsonObject={
+        "name": "Alok Ranjan",
+        "age": 25,
+        "city": "Patna",
+        "isStudent": false,
+        "courses": ["JavaScript", "HTML", "CSS"],
+        "address": {
+          "street": "123 Main St",
+          "zip": "800001"
+        }
+
+      }
+     console.log("JSON Object:", jsonObject);
+      // Converting JSON object to string
+      const jsonString = JSON.stringify(jsonObject);
+      console.log("JSON String:", jsonString);
+      // Converting JSON string back to object
+      const parsedObject = JSON.parse(jsonString);
+      console.log("Parsed Object:", parsedObject);
+      console.log("Name from Parsed Object:", parsedObject.name);
+      console.log("Courses from Parsed Object:", parsedObject.courses);
+      console.log("Street from Parsed Object's Address:", parsedObject.address.street);
+
+      //20. back tick (Template Literals) in JavaScript
+      const name = "Alok Ranjan";
+      console.log(`This is my name ${name}`); // Using backticks (template literals)
+
     </script>
   </body>
 </html>
